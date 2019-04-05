@@ -19,6 +19,6 @@ Table of contents
 
 Dependencies
 ============
-- [Light](https://github.com/karayabin/universe-snapshot/tree/master/universe/Ling/Light)
+- [Light](https://github.com/lingtalfi/Light)
 
 
