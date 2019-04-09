@@ -53,6 +53,18 @@ initializer:
 The "initializer" service is called by the Light instance, at the beginning of the **run** method,
 just after the http request object is ready.
 
+It allows for other plugins to initialize themselves using the Light instance, or the HttpRequest instance.
+
+Examples of use includes:
+
+- collecting statistical data using the http request instance (browser country origin, ip, etc...)
+- registering routes and/or error handlers using the Light instance
+
+
+An initializer must implements the [LightInitializerInterface](https://github.com/lingtalfi/Light_Initializer/blob/master/doc/api/Ling/Light_Initializer/Initializer/LightInitializerInterface.md) interface provided by this planet.
+
+
+
 
 
 
