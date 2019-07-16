@@ -6,7 +6,7 @@ Light_Initializer
 
 An initializer system for the [Light](https://github.com/lingtalfi/Light) framework.
 
-This is a [Light framework plugin](https://github.com/lingtalfi/Light/blob/master/personal/mydoc/pages/plugin.md).
+This is a [Light framework plugin](https://github.com/lingtalfi/Light/blob/master/doc/pages/plugin.md).
 
 This is part of the [universe framework](https://github.com/karayabin/universe-snapshot).
 
@@ -72,6 +72,10 @@ An initializer must implements the [LightInitializerInterface](https://github.co
 History Log
 =============
 
+- 1.1.0 -- 2019-07-16
+
+    - add response argument to LightInitializerInterface.initialize method
+    
 - 1.0.0 -- 2019-04-05
 
     - initial commit

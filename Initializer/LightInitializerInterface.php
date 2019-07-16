@@ -5,11 +5,13 @@ namespace Ling\Light_Initializer\Initializer;
 
 use Ling\Light\Core\Light;
 use Ling\Light\Http\HttpRequestInterface;
+use Ling\Light\Http\HttpResponseInterface;
 
 /**
  * The LightInitializerInterface interface.
  */
-interface LightInitializerInterface{
+interface LightInitializerInterface
+{
 
 
     /**
@@ -17,7 +19,8 @@ interface LightInitializerInterface{
      *
      * @param Light $light
      * @param HttpRequestInterface $httpRequest
+     * @param HttpResponseInterface|null $response
      * @return mixed
      */
-    public function initialize(Light $light, HttpRequestInterface $httpRequest);
+    public function initialize(Light $light, HttpRequestInterface $httpRequest, HttpResponseInterface &$response = null);
 }
