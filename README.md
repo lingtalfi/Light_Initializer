@@ -72,6 +72,10 @@ An initializer must implements the [LightInitializerInterface](https://github.co
 History Log
 =============
 
+- 1.1.1 -- 2019-07-17
+
+    - removed response argument from LightInitializerInterface.initialize method
+    
 - 1.1.0 -- 2019-07-16
 
     - add response argument to LightInitializerInterface.initialize method

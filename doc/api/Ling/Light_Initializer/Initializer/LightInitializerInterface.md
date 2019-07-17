@@ -4,7 +4,7 @@
 
 The LightInitializerInterface class
 ================
-2019-04-05 --> 2019-07-16
+2019-04-05 --> 2019-07-17
 
 
 
@@ -25,7 +25,7 @@ Class synopsis
 abstract class <span class="pl-k">LightInitializerInterface</span>  {
 
 - Methods
-    - abstract public [initialize](https://github.com/lingtalfi/Light_Initializer/blob/master/doc/api/Ling/Light_Initializer/Initializer/LightInitializerInterface/initialize.md)(Ling\Light\Core\Light $light, Ling\Light\Http\HttpRequestInterface $httpRequest, Ling\Light\Http\HttpResponseInterface &$response = null) : mixed
+    - abstract public [initialize](https://github.com/lingtalfi/Light_Initializer/blob/master/doc/api/Ling/Light_Initializer/Initializer/LightInitializerInterface/initialize.md)(Ling\Light\Core\Light $light, Ling\Light\Http\HttpRequestInterface $httpRequest) : mixed
 
 }
 
