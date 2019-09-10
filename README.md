@@ -28,6 +28,7 @@ Or just download it and place it where you want otherwise.
 Summary
 ===========
 - [Light_Initializer api](https://github.com/lingtalfi/Light_Initializer/blob/master/doc/api/Ling/Light_Initializer.md) (generated with [DocTools](https://github.com/lingtalfi/DocTools))
+- [Initializer conception notes](https://github.com/lingtalfi/Light_Initializer/blob/master/doc/pages/initializer-conception-notes.md)
 - [Services](#services)
 
 
@@ -43,9 +44,6 @@ Here is the content of the service configuration file:
 ```yaml
 initializer:
     instance: Ling\Light_Initializer\Util\LightInitializerUtil
-    methods:
-        setInitializers:
-            initializers: []
 
 ```
 
@@ -61,9 +59,11 @@ Examples of use includes:
 - registering routes and/or error handlers using the Light instance
 
 
-An initializer must implements the [LightInitializerInterface](https://github.com/lingtalfi/Light_Initializer/blob/master/doc/api/Ling/Light_Initializer/Initializer/LightInitializerInterface.md) interface provided by this planet.
+An initializer must implement the [LightInitializerInterface](https://github.com/lingtalfi/Light_Initializer/blob/master/doc/api/Ling/Light_Initializer/Initializer/LightInitializerInterface.md) interface provided by this planet.
 
 
+The initializer util can now handle the concept of slots and dependency.
+See more in the [initializer conception notes](https://github.com/lingtalfi/Light_Initializer/blob/master/doc/pages/initializer-conception-notes.md) document.
 
 
 
@@ -71,6 +71,11 @@ An initializer must implements the [LightInitializerInterface](https://github.co
 
 History Log
 =============
+
+- 1.2.0 -- 2019-09-10
+
+    - add slots and dependency concepts
+    - removed setInitializers method
 
 - 1.1.2 -- 2019-07-18
 
