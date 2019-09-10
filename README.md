@@ -72,6 +72,10 @@ See more in the [initializer conception notes](https://github.com/lingtalfi/Ligh
 History Log
 =============
 
+- 1.2.1 -- 2019-09-10
+
+    - fix typos
+    
 - 1.2.0 -- 2019-09-10
 
     - add slots and dependency concepts

@@ -72,7 +72,6 @@ class LightInitializerUtil
      */
     public function registerInitializer(LightInitializerInterface $initializer, string $slot = null, string $parent = null)
     {
-
         if ('install' === $slot) {
             $name = $this->getPluginName($initializer);
             $item = new ParentChildItem();
@@ -88,10 +87,11 @@ class LightInitializerUtil
         if (false === array_key_exists($slot, $this->initializers)) {
             $this->initializers[$slot] = [];
         }
-        $this->initializers[$slot] = [
+        $this->initializers[$slot][] = [
             $initializer,
             $parent,
         ];
+
 
     }
 
@@ -105,10 +105,9 @@ class LightInitializerUtil
      */
     public function initialize(Light $light, HttpRequestInterface $httpRequest)
     {
-
-
         $installItems = $this->initializers['install'] ?? [];
-        $defaultItems = $this->initializers['slot'] ?? [];
+        $defaultItems = $this->initializers['default'] ?? [];
+
 
 
         /**

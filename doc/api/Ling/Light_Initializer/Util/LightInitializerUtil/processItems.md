@@ -57,7 +57,7 @@ Returns void.
 
 Source Code
 ===========
-See the source code for method [LightInitializerUtil::processItems](https://github.com/lingtalfi/Light_Initializer/blob/master/Util/LightInitializerUtil.php#L167-L176)
+See the source code for method [LightInitializerUtil::processItems](https://github.com/lingtalfi/Light_Initializer/blob/master/Util/LightInitializerUtil.php#L166-L175)
 
 
 See Also
