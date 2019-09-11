@@ -36,7 +36,7 @@ class LightInitializerUtil
     /**
      *
      * This property holds the installTree for this instance.
-     * It's an array of name => ParentChildItem
+     * It's an array of name => [ParentChildItem, LightInitializerInterface]
      * @var array
      */
     protected $installTree;
@@ -76,7 +76,7 @@ class LightInitializerUtil
             $name = $this->getPluginName($initializer);
             $item = new ParentChildItem();
             $item->setName($name);
-            $this->installTree[$name] = $item;
+            $this->installTree[$name] = [$item, $initializer];
         }
 
 
@@ -121,7 +121,7 @@ class LightInitializerUtil
                 /**
                  * @var $childItem ParentChildItem
                  */
-                $childItem = $this->installTree[$name];
+                $childItem = $this->installTree[$name][0];
                 if (null === $parent) {
                     $tree[] = $childItem;
                 } else {
@@ -129,7 +129,7 @@ class LightInitializerUtil
                         /**
                          * @var $parentItem ParentChildItem
                          */
-                        $parentItem = $this->installTree[$parent];
+                        $parentItem = $this->installTree[$parent][0];
                         $parentItem->addChild($childItem);
 
                     } else {
@@ -221,7 +221,7 @@ class LightInitializerUtil
         /**
          * @var $initializer LightInitializerInterface
          */
-        $initializer = $this->installTree[$item->getName()];
+        $initializer = $this->installTree[$item->getName()][1];
         $initializer->initialize($light, $httpRequest);
     }
 }

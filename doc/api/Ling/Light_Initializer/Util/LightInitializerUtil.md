@@ -4,7 +4,7 @@
 
 The LightInitializerUtil class
 ================
-2019-04-05 --> 2019-09-10
+2019-04-05 --> 2019-09-11
 
 
 
@@ -60,7 +60,7 @@ Properties
 - <span id="property-installTree"><b>installTree</b></span>
 
     This property holds the installTree for this instance.
-    It's an array of name => ParentChildItem
+    It's an array of name => [ParentChildItem, LightInitializerInterface]
     
     
 

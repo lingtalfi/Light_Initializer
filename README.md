@@ -72,6 +72,10 @@ See more in the [initializer conception notes](https://github.com/lingtalfi/Ligh
 History Log
 =============
 
+- 1.2.2 -- 2019-09-11
+
+    - fix LightInitializerUtil->initializeItemRecursive careless mistake
+    
 - 1.2.1 -- 2019-09-10
 
     - fix typos
